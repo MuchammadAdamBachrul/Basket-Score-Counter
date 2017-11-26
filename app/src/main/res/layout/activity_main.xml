@@ -41,34 +41,37 @@
                 android:textSize="56sp" />
 
             <Button
-                android:id="@+id/team_a_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:text="+3 Points"
-                android:background="#7eb4a9"/>
+                android:background="#7eb4a9"
+                android:onClick="threePointA"
+                />
 
             <Button
-                android:id="@+id/team_a_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:text="+2 Points"
-                android:background="#7eb4a9"/>
+                android:background="#7eb4a9"
+                android:onClick="twoPointA"
+                />
 
             <Button
-                android:id="@+id/team_a_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="8dp"
                 android:text="Free Throw"
-                android:background="#7eb4a9"/>
+                android:background="#7eb4a9"
+                android:onClick="freeThrowA"
+                />
 
         </LinearLayout>
 
@@ -104,34 +107,37 @@
                 android:textSize="56sp"/>
 
             <Button
-                android:id="@+id/team_b_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:text="+3 Points"
-                android:background="#7eb4a9"/>
+                android:background="#7eb4a9"
+                android:onClick="threePointB"
+                />
 
             <Button
-                android:id="@+id/team_b_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:text="+2 Points"
-                android:background="#7eb4a9"/>
+                android:background="#7eb4a9"
+                android:onClick="twoPointB"
+                />
 
             <Button
-                android:id="@+id/team_b_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:text="Free Throw"
-                android:background="#7eb4a9"/>
+                android:background="#7eb4a9"
+                android:onClick="freeThrowB"
+                />
 
         </LinearLayout>
 
@@ -141,9 +147,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
+        android:id="@+id/resetbutton"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:background="#7eb4a9"/>
+        android:background="#7eb4a9"
+        android:onClick="resetSkor"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="#7eb4a9"
+        android:onClick="kirimReset"
+        />
 
 </RelativeLayout>
